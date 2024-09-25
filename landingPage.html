@@ -2,7 +2,10 @@
 <html>
 <head>
     <title>Login Administrador</title>
-    <link rel="stylesheet" href="src/LandingPage.css">
+    <link rel="stylesheet" href="LandingPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -15,11 +18,13 @@
             <label for="usuario">Usuário:</label>
             <input type="text" id="usuario" placeholder="Ex: avnadmin">
             <label for="senha">Digite a senha:</label>
+        <div class="senha-container">
             <input type="password" id="senha" placeholder="Ex: ********">
-            <span class="mostrar-senha">Mostrar</span>
+            <span class="mostrar-senha"><img src="Icone_olhoA.png" class="imagem-olho" alt="mostrar senha"></span>
+        </div>
             <button type="submit">Entrar</button>
         </form>
     </div>
-    <script src="src/LandingPage.js"></script>
+    <script src="LandingPage.js"></script>
 </body>
 </html>
