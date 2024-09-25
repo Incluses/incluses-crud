@@ -1,0 +1,58 @@
+body {
+    font-family: palanquin;
+}
+
+.incluses{
+    display: block;
+    float: left;
+
+    font-size: 30px;
+
+}
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 5%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+  .container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    width: 85%;
+    
+}
+
+  
+
+}
+
+  .adm{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  
+.card {
+    border: 1px solid rgb(37, 107, 182);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    height: 85%;
+    width: 35%;
+  }
+
+
+.inclus{
+    color: mediumblue;
+}
+.es{
+    color:blueviolet
+}

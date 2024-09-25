@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portalAdm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Portal Administrador</title>
+    
+</head>
+<body>
+    <div class="container">  
+        <div class="incluses">
+            <h1><span class="inclus">Inclus</span><span class="es">es</span></h1>
+        </div>
+
+        <h1>Portal Administrador</h1>    
+    
+        <div class="container-card">
+            <div class="card">
+            <div class="adm">
+                <h2>Adm</h2>
+                <div class="acessar">
+                    <p>Acessar</p>
+                </div>
+            </div>
+                
+            <p>Campos:</p>
+            <ul>
+                <li>id SERIAL PRIMARY KEY,</li>
+                <li>username VARCHAR(50) NOT NULL,</li>
+                <li>senha VARCHAR(16) CHECK (length(senha) >= 8)</li>
+            </ul>
+            <button>Acessar</button>
+            </div>
+            
+        </div>
+    </div>
+
+<script src="portalAdm.js"></script>
+</body>
+</html>
