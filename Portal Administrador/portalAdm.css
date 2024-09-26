@@ -69,7 +69,7 @@ body {
 
   
   hr {
-    border: none;               /* Remove a borda padrão */
+    border: none;               
     height: 0.5px;              /* Define a altura da linha */
     background-color: cornflowerblue; /* Cor da linha */
     width: 100%;                 /* Largura da linha (em porcentagem do contêiner) */

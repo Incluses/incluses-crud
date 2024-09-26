@@ -1,26 +1,26 @@
 body {
-    font-family: palanquin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-size: 20px;
-    margin: 0;
+    font-family: palanquin; /* Define a fonte */
+    display: flex; /* Define o display como flex */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura */
+    font-size: 20px; /* Tamanho da fonte */
+    margin: 0; /* Remove a margem */
 }
 h1{
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 48px;  /* aumenta o tamanho da fonte */
+    font-weight: 600;  /* aumenta o tamanho da fonte */
 }
 h2{
-    padding-left: 10%;
-    margin: 0;
+    padding-left: 10%; /* Move o texto para a esquerda */
+    margin: 0; /* Remove a margem */
 }
 
 label{
-    font-size: 70%;
-    color: #929292;
-    padding-left: 3%;
-    margin: 10px 0 5px;
+    font-size: 70%;  /* aumenta o tamanho da fonte */
+    color: #929292; /* Altera a cor */
+    padding-left: 3%; /* Move o texto para a esquerda */
+    margin: 10px 0 5px; /* Remove a margem */
 }
 
 
@@ -33,16 +33,16 @@ hr {
 }
 
 form{
-    padding-left: 10%;
-    flex-direction: column;
+    padding-left: 10%; /* Move o texto para a esquerda */
+    flex-direction: column; /* Coloca o conteúdo em colunas */
 }
 
 
 input {
-    padding: 10px 15px;
-    border: 1px solid #ccc;
+    padding: 10px 15px; /* Aumenta o padding */
+    border: 1px solid #ccc; /* Adiciona uma borda */
     border-radius: 25px; /* Borda arredondada */
-    font-size: 20px;
+    font-size: 20px; /* Tamanho da fonte */
     box-sizing: border-box; /* Garante que o padding não afete a largura total */
 }
 
@@ -54,66 +54,65 @@ input {
 }
 
 .incluses{
-    text-align: center;
+    text-align: center; /* Centraliza o texto */
 }
 
 .inclus{
-    color: mediumblue;
+    color: mediumblue; /* Cor do texto */
 }
 .es{
-    color:blueviolet
+    color:blueviolet /* Cor do texto */
 }
 
 .container {
-    position: relative;
-    background-color: #fff;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
-    text-align: left;
-    width: 545px;
-    height: 565px;
-    align-items: center;
-    padding: 20px;
+    position: relative; /* Define o posicionamento como absoluto */
+    background-color: #fff; /* Cor de fundo */
+    border-radius: 25px; /* Borda arredondada */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* Sombra */    
+    text-align: left; /* Centraliza o texto */
+    width: 545px; /* Largura */
+    height: 565px; /* Altura */
+    align-items: center; /* Centraliza o conteúdo */
+    padding: 20px; /* Preenchimento */
 }
 
 .container h2 {
-    text-align: left;
+    text-align: left; /* Centraliza o texto */
 }
 
 .container input {
-    display: flex;
-    justify-content: center;
-    width: 85%;
-    height: 60px;
-    padding: 5%;
-    border: 1px solid #929292;
-    border-radius: 10px;
-
+    display: flex; /* Define o display flex */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 85%; /* Largura */
+    height: 60px; /* Altura */
+    padding: 5%; /* Preenchimento */
+    border: 1px solid #929292; /* Adiciona uma borda */
+    border-radius: 10px; /* Borda arredondada */
 }
 
 .container button {
-    background-color: rgb(20, 20, 188);
-    color: #fff;
-    padding: 5% 15%;;
-    border: none;
-    width: 75%;
-    border-radius: 15px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 15px;
-    margin-left: 5%;
-    margin-top: 24px;
+    background-color: rgb(20, 20, 188); /* Altera a cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 5% 15%;; /* Preenchimento */
+    border: none; /* Remove a borda */
+    width: 75%; /* Largura */
+    border-radius: 15px; /* Borda arredondada */
+    cursor: pointer; /* Altera o cursor */
+    font-weight: bold; /* Altera a fonte */
+    font-size: 15px; /* Tamanho da fonte */
+    margin-left: 5%; /* Margem para esquerda */
+    margin-top: 24px; /* Margem para cima */
 }
 
 
 .container button:hover {
-    background-color: #ccc;	
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(20, 20, 188);
-    transition: 0.5s;
-    background-color: #8a0fc8;
-    font-weight: bold;
-    font-size: 15px;
+    background-color: #ccc; /* Altera a cor de fundo */
+    color: rgb(255, 255, 255); /* Cor do texto */
+    border: 1px solid rgb(20, 20, 188); /* Adiciona uma borda */
+    transition: 0.5s ease-in; /* Altera o tempo de transição */
+    background-color: #8a0fc8; /* Altera a cor de fundo */
+    font-weight: bold; /* Altera a fonte */
+    font-size: 15px; /* Tamanho da fonte */
 }
 
 
