@@ -117,27 +117,27 @@ input {
 
 
 .mostrar-senha{
-    cursor: default;
-    font-size: 14px;
-    float: right;
-    color: #8a0fc8;
-    font-weight: bold;
-    text-decoration: none;
-    right: 13ch;
-    margin-top: 15px;
-    margin-bottom: 1%;
-    cursor: pointer;
-    position: absolute;
+    cursor: default; /* Altera o cursor */
+    font-size: 14px; /* Tamanho da fonte */
+    float: right; /* Coloca o elemento para a direita */
+    color: #8a0fc8; /* Cor do texto */
+    font-weight: bold; /* Altera a fonte */
+    text-decoration: none; /* Remove o sublinhado */
+    right: 13ch; /* Move o texto para a direita */
+    margin-top: 15px; /* Margem para cima */
+    margin-bottom: 1%; /* Margem para baixo */
+    cursor: pointer;    /* Altera o cursor */
+    position: absolute; /* Define o posicionamento bonus absoluto */
    
 }
 
 .imagem-olho{
-    width: 100%;
-    height: 25px;
+    width: 100%; /* Largura */
+    height: 25px; /* Altura */
 }
 
 .senha-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex; /* Define o display como flex */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /*Espaça o conteúdo entre os elementos */
 }

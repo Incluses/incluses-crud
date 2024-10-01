@@ -11,13 +11,42 @@
     
 </head>
 <body>
+    <div class="voltar">
+        <p>< Voltar</p>
+    </div>
     <div class="container">  
         <div class="incluses">
             <h1><span class="inclus">Inclus</span><span class="es">es</span></h1>
         </div>
-
-        <h1>Portal Administrador</h1>    
+        <div class="opcoes">
+            <div class="portal">
+                <h3>Portal Administrador</h3>
+            </div>
+            
+            <div class="graficos">
+                <h3 id="#graficos">Gráficos</h3>
+            </div>
+        </div>
+        
         <hr>
+        <div class="container-card">
+            <div class="card">
+            <div class="adm">
+                <h2>Adm</h2>
+                <div class="acessar">
+                    <p>Acessar</p>
+                </div>
+            </div>
+                
+            <p>Campos:</p>
+            <ul>
+                <li>id <span class="amarelo">SERIAL</span> <span class="roxo">PRIMARY KEY</span>,</li>
+                <li>username <span class="amarelo">VARCHAR(50)</span> <span class="roxo">NOT NULL</span>,</li>
+                <li>senha <span class="amarelo">VARCHAR(16)</span> <span class="roxo">CHECK</span> (length(senha) >= 8)</li>
+            </ul>
+            </div>
+
+        </div>
         <div class="container-card">
             <div class="card">
             <div class="adm">
@@ -33,7 +62,6 @@
                 <li>username VARCHAR(50) NOT NULL,</li>
                 <li>senha VARCHAR(16) CHECK (length(senha) >= 8)</li>
             </ul>
-            <button>Acessar</button>
             </div>
 
         </div>
