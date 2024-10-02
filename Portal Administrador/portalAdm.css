@@ -69,7 +69,6 @@ hr {
   display: none; /* Oculta a barra de rolagem */
 }
 
-
 .container-card {
   display: flex;
   justify-content: space-between;
@@ -79,7 +78,7 @@ hr {
   padding-right: 55%;
 }
 
-.card {
+.card-medio {
   display: flex;
   flex-direction: column;
   background-color: #e3f2fd;
@@ -92,41 +91,113 @@ hr {
   min-width: auto;
 }
 
-.container-card-grid {
-  display: grid;
-  grid-template-columns: repeat(2 , 1fr);
-  gap: 20px;
-  margin-top: 20px;
+.card-medio p {
+  display: flex;
+  padding-left: 5%;
+  font-size: 15px;
+  font-weight: bold;
 }
 
-.adm {
+.medio-grid {
+  grid-column: 2 / 3; 
+  grid-row: 2;
+  height: 100%; 
+}
+
+.card-grande {
+  display: flex;
+  flex-direction: column;
+  background-color: #e3f2fd;
+  border-radius: 16px;
+  width: 495px;
+  height: 220px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #2196f3;
+  min-height: auto;
+  min-width: auto;
+}
+
+.card-grande p {
+  display: flex;
+  padding-left: 5%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.grande-grid{
+  grid-column: 1 / 2;
+  grid-row: 1; 
+  height: 100%; 
+}
+
+
+.card-pequeno {
+  display: flex;
+  flex-direction: column;
+  background-color: #e3f2fd;
+  border-radius: 16px;
+  width: 495px;
+  height: 170px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #2196f3;
+  min-height: auto;
+  min-width: auto;
+}
+
+.card-pequeno p {
+  display: flex;
+  padding-left: 5%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.pequeno-grid{
+  grid-column: 2 / 2; 
+  grid-row: 1; 
+  height: 100%; 
+}
+
+.container-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding-left: 5%;
+}
+
+.container-card-grid .grande-grid {
+
+}
+
+.barra{
   display: flex;
   padding: 2%;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
   width: 100%;
+  height: 60px;
   background-color: #407bff;
   border-radius: 15px;
 }
 
-.adm h2 {
+.barra h2 {
   color: white;
-  font-size: 1.5rem;
-  margin: 2px;
+  font-size: 1.3rem;
+  margin: 15px;
 }
 
 .acessar {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 15px;
   color: rgb(0, 0, 0);
   background-color: #ffffff;
   padding: 1%;
-  width: 35%;
+  width: 30%;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 500px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -134,13 +205,6 @@ hr {
   background-color: #46aafc;
   color: rgb(255, 255, 255);
   transition: 0.5s;
-}
-
-.card p {
-  display: flex;
-  padding-left: 5%;
-  font-size: 15px;
-  font-weight: bold;
 }
 
 .portal {
@@ -173,7 +237,7 @@ hr {
   justify-content: center;
   align-items: center;
   color: rgb(255, 255, 255);
-  background-color: #2b46d3;
+  background-color: #70B3FF;
   width: 205px;
   height: 77px;
   border-radius: 30px;
@@ -211,5 +275,5 @@ ul {
 ul li {
   font-size: 14px;
   color: #333;
-  padding-left: 7%;
+  padding-left: 9%;
 }
