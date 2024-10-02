@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portalAdm.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -11,13 +13,17 @@
     
 </head>
 <body>
+
     <div class="voltar">
-        <p>< Voltar</p>
+        <p>🢐 Voltar</p>
     </div>
+
     <div class="container">  
+
         <div class="incluses">
             <h1><span class="inclus">Inclus</span><span class="es">es</span></h1>
         </div>
+        
         <div class="opcoes">
             <div class="portal">
                 <h3>Portal Administrador</h3>
@@ -29,60 +35,64 @@
         </div>
         
         <hr>
-        <div class="container-card">
-            <div class="card">
-            <div class="adm">
-                <h2>Adm</h2>
-                <div class="acessar">
-                    <p>Acessar</p>
+        
+        <!-- Contêiner de rolagem -->
+        <div class="container-card-grid">
+            <div class="container-card-scroll">
+            
+                <div class="container-card">
+                    <div class="card">
+                        <div class="adm">
+                            <h2>Adm</h2>
+                            <div class="acessar">
+                                <p>Acessar</p>
+                            </div>
+                        </div>
+            
+                        <p>Campos:</p>
+                        <ul>
+                            <li>id <span class="amarelo">SERIAL</span> <span class="roxo">PRIMARY KEY</span>,</li>
+                            <li>username <span class="amarelo">VARCHAR(50)</span> <span class="roxo">NOT NULL</span>,</li>
+                            <li>senha <span class="amarelo">VARCHAR(16)</span> <span class="roxo">CHECK</span> (length(senha) >= 8)</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-                
-            <p>Campos:</p>
-            <ul>
-                <li>id <span class="amarelo">SERIAL</span> <span class="roxo">PRIMARY KEY</span>,</li>
-                <li>username <span class="amarelo">VARCHAR(50)</span> <span class="roxo">NOT NULL</span>,</li>
-                <li>senha <span class="amarelo">VARCHAR(16)</span> <span class="roxo">CHECK</span> (length(senha) >= 8)</li>
-            </ul>
-            </div>
-
-        </div>
-        <div class="container-card">
-            <div class="card">
-            <div class="adm">
-                <h2>Adm</h2>
-                <div class="acessar">
-                    <p>Acessar</p>
+                <div class="container-card">
+                    <div class="card">
+                        <div class="adm">
+                            <h2>Adm</h2>
+                            <div class="acessar">
+                                <p>Acessar</p>
+                            </div>
+                        </div>
+            
+                        <p>Campos:</p>
+                        <ul>
+                            <li>id SERIAL PRIMARY KEY,</li>
+                            <li>username VARCHAR(50) NOT NULL,</li>
+                            <li>senha VARCHAR(16) CHECK (length(senha) >= 8)</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-                
-            <p>Campos:</p>
-            <ul>
-                <li>id SERIAL PRIMARY KEY,</li>
-                <li>username VARCHAR(50) NOT NULL,</li>
-                <li>senha VARCHAR(16) CHECK (length(senha) >= 8)</li>
-            </ul>
-            </div>
-
-        </div>
-        <div class="container-card">
-            <div class="card">
-            <div class="adm">
-                <h2>Adm</h2>
-                <div class="acessar">
-                    <p>Acessar</p>
+                <div class="container-card">
+                    <div class="card">
+                        <div class="adm">
+                            <h2>Adm</h2>
+                            <div class="acessar">
+                                <p>Acessar</p>
+                            </div>
+                        </div>
+            
+                        <p>Campos:</p>
+                        <ul>
+                            <li>id SERIAL PRIMARY KEY,</li>
+                            <li>username VARCHAR(50) NOT NULL,</li>
+                            <li>senha VARCHAR(16) CHECK (length(senha) >= 8)</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-                
-            <p>Campos:</p>
-            <ul>
-                <li>id SERIAL PRIMARY KEY,</li>
-                <li>username VARCHAR(50) NOT NULL,</li>
-                <li>senha VARCHAR(16) CHECK (length(senha) >= 8)</li>
-            </ul>
-            </div>
-
-        </div>
+            </div> <!-- Fim do contêiner de rolagem -->
+        </div> 
     </div>
 
 <script src="portalAdm.js"></script>

@@ -27,7 +27,8 @@ body {
   width: 85%;
   height: 90vh;
   min-height: 80vh; 
-  position: relative;
+  position: absolute;
+  overflow: hidden;
 }
 
 .incluses h1 {
@@ -39,7 +40,7 @@ body {
   color: #673ab7;
   text-align: left;
   position: absolute;
-  top:4%;
+  top: 4%;
   left: 5%;
 }
 
@@ -51,16 +52,6 @@ body {
   color: #2196f3;
 }
 
-
-.portal-admin h1 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #333;
-  text-align: center;
-  position: relative;
-  margin-top: 60px;
-}
-
 hr {
   border: none;
   border-top: 0.2px solid #2196f3;
@@ -69,14 +60,23 @@ hr {
   left: -10px;
 }
 
+.container-card-scroll {
+  overflow-y: scroll;
+  max-height: 65vh;
+}
+
+.container-card-scroll::-webkit-scrollbar {
+  display: none; /* Oculta a barra de rolagem */
+}
 
 
 .container-card {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px; 
+  gap: 20px;
   margin-top: 20px;
+  padding-right: 55%;
 }
 
 .card {
@@ -84,12 +84,19 @@ hr {
   flex-direction: column;
   background-color: #e3f2fd;
   border-radius: 16px;
-  width:495px;
-  height: 199px; 
+  width: 495px;
+  height: 199px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border: 1px solid #2196f3;
   min-height: auto;
   min-width: auto;
+}
+
+.container-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .adm {
@@ -99,7 +106,7 @@ hr {
   align-items: center;
   margin-bottom: 15px;
   width: 100%;
-  background-color: #407bff; 
+  background-color: #407bff;
   border-radius: 15px;
 }
 
@@ -126,7 +133,7 @@ hr {
 .acessar:hover {
   background-color: #46aafc;
   color: rgb(255, 255, 255);
-  transition: 0.5s ;
+  transition: 0.5s;
 }
 
 .card p {
@@ -136,21 +143,21 @@ hr {
   font-weight: bold;
 }
 
-.portal{
+.portal {
   display: flex;
   justify-content: center;
   align-items: center;
   color: rgb(255, 255, 255);
-  background-color:#2b46d3;
+  background-color: #2b46d3;
   width: 205px;
   height: 77px;
   border-radius: 30px;
   cursor: pointer;
   font-size: 15px;
   font-weight: bold;
-  
 }
-.opcoes{
+
+.opcoes {
   margin-left: 2%;
   display: flex;
   justify-content: center;
@@ -161,19 +168,36 @@ hr {
   color: rgb(255, 255, 255);
 }
 
-
-.graficos{
+.graficos {
   display: flex;
   justify-content: center;
   align-items: center;
   color: rgb(255, 255, 255);
-  background-color:#2b46d3;
+  background-color: #2b46d3;
   width: 205px;
   height: 77px;
   border-radius: 30px;
   cursor: pointer;
   font-size: 15px;
   font-weight: bold;
+}
+
+.voltar {
+  display: flex;
+  padding-left: 5%;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background-color: #2b46d3;
+  width: 200px;
+  height: 60px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  left: -50%;
 }
 
 ul {
@@ -189,4 +213,3 @@ ul li {
   color: #333;
   padding-left: 7%;
 }
-
