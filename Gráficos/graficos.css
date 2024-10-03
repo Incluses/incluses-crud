@@ -75,7 +75,10 @@ font-weight: bold;
 }
 
 .opcoes {
-margin-left: 2%;
+position: relative;
+top: 15%;
+left: 5%;
+width: 100%;
 display: flex;
 justify-content: center;
 gap: 5%;

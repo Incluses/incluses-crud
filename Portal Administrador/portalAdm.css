@@ -66,7 +66,7 @@ hr {
 }
 
 .container-card-scroll::-webkit-scrollbar {
-  display: none; /* Oculta a barra de rolagem */
+  display: none; 
 }
 
 .container-card {
@@ -74,8 +74,8 @@ hr {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
-  margin-top: 20px;
-  padding-right: 55%;
+  padding-top: 20px;
+  padding-left: 13%;
 }
 
 .card-medio {
@@ -160,11 +160,7 @@ hr {
 .container-card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  padding-left: 5%;
-}
-
-.container-card-grid .grande-grid {
+  grid-gap: 25px;
 
 }
 
@@ -225,7 +221,7 @@ hr {
   margin-left: 2%;
   display: flex;
   justify-content: center;
-  gap: 5%;
+  gap: 10%;
   width: 100%;
   min-height: 100px;
   height: 15%;
