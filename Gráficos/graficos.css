@@ -17,7 +17,7 @@ width: 100vw;
 
 
 .container {
-display: grid;
+display: flex; 
 text-align: center;
 background-color: white;
 padding: 30px;
@@ -26,9 +26,28 @@ border-radius: 30px;
 box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 width: 85%;
 height: 90vh;
-min-height: 80vh; 
+min-height: 80vh;
 position: absolute;
 overflow: hidden;
+}
+
+.incluses {
+width: 50%;
+display: flex;
+align-items: center;
+margin-right: 10px;
+
+}
+
+.opcoes {
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10%;
+width: 100%;
+color: rgb(255, 255, 255);
+padding-left:20%;
 }
 
 .incluses h1 {
@@ -53,19 +72,18 @@ color: #782CD4;
 }
 
 hr {
-border: none;
-border-top: 0.2px solid #2196f3;
-width: 100%;
-position: relative;
-left: -10px;
-}
-
+    border: none;
+    border-top: 0.2px solid #2196f3;
+    width: 100%;
+    position: relative;
+    left: -10px;
+  }
 .portal {
 display: flex;
 justify-content: center;
 align-items: center;
 color: rgb(255, 255, 255);
-background-color:#70B3FF ;
+background-color: #2b46d3;
 width: 205px;
 height: 77px;
 border-radius: 30px;
@@ -74,26 +92,13 @@ font-size: 15px;
 font-weight: bold;
 }
 
-.opcoes {
-position: relative;
-top: 15%;
-left: 5%;
-width: 100%;
-display: flex;
-justify-content: center;
-gap: 5%;
-width: 100%;
-min-height: 100px;
-height: 15%;
-color: rgb(255, 255, 255);
-}
 
 .graficos {
 display: flex;
 justify-content: center;
 align-items: center;
 color: rgb(255, 255, 255);
-background-color: #2b46d3;
+background-color: #70B3FF;
 width: 205px;
 height: 77px;
 border-radius: 30px;
@@ -118,4 +123,12 @@ font-weight: bold;
 position: relative;
 z-index: 1;
 left: -50%;
+}
+
+hr {
+    border: none;
+    border-top: 0.2px solid #2196f3;
+    width: 100%;
+    position: relative;
+    left: -10px;
 }
