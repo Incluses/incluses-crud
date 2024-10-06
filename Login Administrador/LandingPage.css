@@ -10,10 +10,13 @@ body {
 h1{
     font-size: 48px;  /* aumenta o tamanho da fonte */
     font-weight: 600;  /* aumenta o tamanho da fonte */
+    margin: 0;
+    padding-top: 5%;
 }
 h2{
     padding-left: 10%; /* Move o texto para a esquerda */
     margin: 0; /* Remove a margem */
+    padding-top: 2%;
 }
 
 label{
@@ -73,7 +76,7 @@ input {
     width: 545px; /* Largura */
     height: 565px; /* Altura */
     align-items: center; /* Centraliza o conteúdo */
-    padding: 20px; /* Preenchimento */
+    padding: 5px; /* Preenchimento */
 }
 
 .container h2 {
@@ -108,7 +111,7 @@ input {
 .container button:hover {
     background-color: #ccc; /* Altera a cor de fundo */
     color: rgb(255, 255, 255); /* Cor do texto */
-    border: 1px solid rgb(20, 20, 188); /* Adiciona uma borda */
+    border: 1px solid #2C46D1; /* Adiciona uma borda */
     transition: 0.5s ease-in; /* Altera o tempo de transição */
     background-color: #8a0fc8; /* Altera a cor de fundo */
     font-weight: bold; /* Altera a fonte */
@@ -128,7 +131,6 @@ input {
     margin-bottom: 1%; /* Margem para baixo */
     cursor: pointer;    /* Altera o cursor */
     position: absolute; /* Define o posicionamento bonus absoluto */
-   
 }
 
 .imagem-olho{
@@ -140,4 +142,26 @@ input {
     display: flex; /* Define o display como flex */
     align-items: center; /* Centraliza verticalmente */
     justify-content: space-between; /*Espaça o conteúdo entre os elementos */
+}
+
+.voltar{
+    text-align: center;
+    padding: 1.5%;
+    width: 10%;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 0;
+    background-color: #2C46D1;
+    font-size: 25px;
+    color: #ffffff;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+
+.voltar:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    text-align: left;
+    left: 23%;
 }
