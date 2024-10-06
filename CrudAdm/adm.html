@@ -13,10 +13,10 @@
             <h2>Incluses</h2>
             <nav>
                 <ul>
-                    <li><a href="#"><img src="casinha.png" alt="home">home</a></li>
+                    <li><a href="#"><img src="house.png" alt="home">Home</a></li>
                     <li><a href="#">Adm</a></li>
-                    <li><a href="#">Permissao Vaga</a></li>
-                    <li><a href="#">Permissao Curso</a></li>
+                    <li><a href="#">Permissão Vaga</a></li>
+                    <li><a href="#">Permissão Curso</a></li>
                     <li><a href="#">Setores</a></li>
                     <li><a href="#">Tipo de arquivo</a></li>
                     <li><a href="#">Tipo de vaga</a></li>
@@ -24,7 +24,7 @@
                     <li><a href="#">Status curso</a></li>
                 </ul>
             </nav>
-            <button class="logout-btn">Sair</button>
+            <button class="logout">Sair</button>
         </aside>
 
         <!-- Conteúdo principal -->
@@ -32,7 +32,11 @@
             <div class="crud-header">
                 <h1>Crud Adm</h1>
                 <button class="filter-btn">Filtrar</button>
+                <button class="insert-btn">Inserir Novo</button>
+
             </div>
+
+            <!-- Tabela de CRUD -->
             <table class="crud-table">
                 <thead>
                     <tr>
@@ -85,8 +89,21 @@
                     </tr>
                 </tbody>
             </table>
-            <button class="insert-btn">inserir adm</button>
         </main>
     </div>
+
+    <script>
+        // Script para mostrar senhas
+        document.querySelectorAll('.show-password').forEach(button => {
+            button.addEventListener('click', () => {
+                const td = button.parentNode.previousElementSibling;
+                if (td.textContent === '*****') {
+                    td.textContent = button.getAttribute('data-password');
+                } else {
+                    td.textContent = '*****';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
