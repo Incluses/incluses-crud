@@ -1,92 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD Adm</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Adm</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <h2>Incluses</h2>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="casinha.png" alt="home">home</a></li>
-                    <li><a href="#">Adm</a></li>
-                    <li><a href="#">Permissao Vaga</a></li>
-                    <li><a href="#">Permissao Curso</a></li>
-                    <li><a href="#">Setores</a></li>
-                    <li><a href="#">Tipo de arquivo</a></li>
-                    <li><a href="#">Tipo de vaga</a></li>
-                    <li><a href="#">Situação trabalhista</a></li>
-                    <li><a href="#">Status curso</a></li>
-                </ul>
-            </nav>
-            <button class="logout-btn">Sair</button>
-        </aside>
 
-        <!-- Conteúdo principal -->
-        <main class="content">
-            <div class="crud-header">
-                <h1>Crud Adm</h1>
-                <button class="filter-btn">Filtrar</button>
-            </div>
-            <table class="crud-table">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Username</th>
-                        <th>Senha</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>admin1</td>
-                        <td>*****</td>
-                        <td>
-                            <button class="action-btn show-password" data-password="12345">👁️</button>
-                            <button class="action-btn edit">✏️</button>
-                            <button class="action-btn delete">🗑️</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>admin2</td>
-                        <td>*****</td>
-                        <td>
-                            <button class="action-btn show-password" data-password="67890">👁️</button>
-                            <button class="action-btn edit">✏️</button>
-                            <button class="action-btn delete">🗑️</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>admin3</td>
-                        <td>*****</td>
-                        <td>
-                            <button class="action-btn show-password" data-password="abcde">👁️</button>
-                            <button class="action-btn edit">✏️</button>
-                            <button class="action-btn delete">🗑️</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>admin4</td>
-                        <td>*****</td>
-                        <td>
-                            <button class="action-btn show-password" data-password="vwxyz">👁️</button>
-                            <button class="action-btn edit">✏️</button>
-                            <button class="action-btn delete">🗑️</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <button class="insert-btn">inserir adm</button>
-        </main>
+    <aside class="sidebar">
+        <div class="titulo">
+            <h1><span class="inclus">Inclus</span><span class="es">es</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"><img src="casa.png">Home</a></li>
+                <li><a href="#">Adm</a></li>
+                <li><a href="#">Permissão Vaga</a></li>
+                <li><a href="#">Permissão Curso</a></li>
+                <li><a href="#">Setores</a></li>
+                <li><a href="#">Tipo de arquivo</a></li>
+                <li><a href="#">Tipo de vaga</a></li>
+                <li><a href="#">Situação trabalhista</a></li>
+                <li><a href="#">Status curso</a></li>
+            </ul>
+        </nav>
+        <button class="logout">Sair</button>
+    </aside>
+
+  <div class="container">
+    <main class="main-content">
+      <div class="titulo">
+        <h1>Crud Adm</h1>
+      <button class="filtrar">Filtrar <span class="pesquisa"> > </span></button>
+        <button class="inserir-adm">Inserir Adm</button>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-header registro">Registro</div>
+        <div class="grid-header username">Username</div>
+        <div class="grid-header senha">Senha</div>
+        <div class="grid-header acoes">Ações</div>
+    
+        <div class="grid-item">1</div>
+        <div class="grid-item">admin1</div>
+        <div class="grid-item">*****</div>
+        <div class="grid-item">
+            <button class="action view">👁</button>
+            <button class="action edit">✏</button>
+            <button class="action delete">🗑</button>
+        </div>
+    
+        <div class="grid-item">2</div>
+        <div class="grid-item">admin2</div>
+        <div class="grid-item">*****</div>
+        <div class="grid-item">
+            <button class="action view">👁</button>
+            <button class="action edit">✏</button>
+            <button class="action delete">🗑</button>
+        </div>
+    
+        <div class="grid-item">3</div>
+        <div class="grid-item">admin3</div>
+        <div class="grid-item">*****</div>
+        <div class="grid-item">
+            <button class="action view">👁</button>
+            <button class="action edit">✏</button>
+            <button class="action delete">🗑</button>
+        </div>
+    
+        <div class="grid-item">4</div>
+        <div class="grid-item">admin4</div>
+        <div class="grid-item">*****</div>
+        <div class="grid-item">
+            <button class="action view">👁</button>
+            <button class="action edit">✏</button>
+            <button class="action delete">🗑</button>
+        </div>
     </div>
+    
+
+  <script src="script.js"></script>
 </body>
 </html>
