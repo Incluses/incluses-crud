@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<<<<<<< HEAD
 
     <aside class="sidebar">
         <div class="titulo">
@@ -82,104 +81,5 @@
     
 
   <script src="script.js"></script>
-=======
-    <div class="container">
-        <aside class="sidebar">
-            <h2>Incluses</h2>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="house.png" alt="home">Home</a></li>
-                    <li><a href="#">Adm</a></li>
-                    <li><a href="#">Permissão Vaga</a></li>
-                    <li><a href="#">Permissão Curso</a></li>
-                    <li><a href="#">Setores</a></li>
-                    <li><a href="#">Tipo de arquivo</a></li>
-                    <li><a href="#">Tipo de vaga</a></li>
-                    <li><a href="#">Situação trabalhista</a></li>
-                    <li><a href="#">Status curso</a></li>
-                </ul>
-            </nav>
-            <button class="logout">Sair</button>
-        </aside>
-
-        <!-- Conteúdo principal -->
-        <main class="content">
-            <div class="crud-header">
-                <h1>Crud Adm</h1>
-                <button class="filter-btn">Filtrar</button>
-                <button class="insert-btn">Inserir Novo</button>
-
-            </div>
-
-            <!-- Tabela de CRUD -->
-            <table class="crud-table">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Username</th>
-                        <th>Senha</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>admin1</td>
-                        <td>*****</td>
-                        <td>
-                            <button class="action-btn show-password" data-password="12345">👁️</button>
-                            <button class="action-btn edit">✏️</button>
-                            <button class="action-btn delete">🗑️</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>admin2</td>
-                        <td>*****</td>
-                        <td>
-                            <button class="action-btn show-password" data-password="67890">👁️</button>
-                            <button class="action-btn edit">✏️</button>
-                            <button class="action-btn delete">🗑️</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>admin3</td>
-                        <td>*****</td>
-                        <td>
-                            <button class="action-btn show-password" data-password="abcde">👁️</button>
-                            <button class="action-btn edit">✏️</button>
-                            <button class="action-btn delete">🗑️</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>admin4</td>
-                        <td>*****</td>
-                        <td>
-                            <button class="action-btn show-password" data-password="vwxyz">👁️</button>
-                            <button class="action-btn edit">✏️</button>
-                            <button class="action-btn delete">🗑️</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </main>
-    </div>
-
-    <script>
-        // Script para mostrar senhas
-        document.querySelectorAll('.show-password').forEach(button => {
-            button.addEventListener('click', () => {
-                const td = button.parentNode.previousElementSibling;
-                if (td.textContent === '*****') {
-                    td.textContent = button.getAttribute('data-password');
-                } else {
-                    td.textContent = '*****';
-                }
-            });
-        });
-    </script>
->>>>>>> e54b09085ca18af04023ffac56375ca4bfdd0536
 </body>
 </html>
