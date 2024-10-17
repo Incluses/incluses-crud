@@ -16,70 +16,36 @@ document.querySelectorAll('.delete').forEach(button => {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function() {
-    const filterButton = document.querySelector('.filtrar');
-    const filterBar = document.getElementById('filtrar-bar');
-    filterButton.addEventListener('click', toggleFilterBar);
-
-    // Função para alternar a visibilidade da barra de filtro
-    function toggleFilterBar() {
-        if (filterBar.style.display === 'none') {
-            filterBar.style.display = 'flex';
-        } else {
-            filterBar.style.display = 'none';
-        }
-    }
-
-    const inserirADM = document.querySelectorAll('.edit');
-    const cancelADM = document.querySelector('.bt-cancelar');
-    const popupADM = document.getElementById('popupID');
-     // Correto: sem o ponto
-    for(i=0;i<5;i++)
-     inserirADM[i].addEventListener('click', togglePopup);
-    cancelADM.addEventListener('click', cancelPopup);
-
-    // Função para alternar a visibilidade do popup
-    function togglePopup() {
-        if (popupADM.style.display === 'none') {
-            popupADM.style.display = 'flex';
-        } else {
-            popupADM.style.display = 'none';
-        }
-    }
-
-    function cancelPopup() {
-        popupADM.style.display = 'none'
-    }
-
-
+  const filterButton = document.querySelector('.filtrar');
+  const filterBar = document.getElementById('filter-bar');
+  filterButton.addEventListener('click', toggleFilterBar);
+  function toggleFilterBar() {
+      if (filterBar.style.display === 'none' || filterBar.style.display === '') {
+          filterBar.style.display = 'flex';
+      } else {
+          filterBar.style.display = 'none';
+      }
+  }
 
   // Lógica de filtragem
   const form = filterBar.querySelector('form');
   form.addEventListener('submit', function(event) {
-      event.preventDefault(); 
+      event.preventDefault(); // Evitar envio do formulário
 
       const selectedField = this['filter-field'].value;
       const searchTerm = this['search'].value.toLowerCase();
 
       const gridItems = document.querySelectorAll('.grid-container .grid-item');
 
+      // Ocultar todos os itens inicialmente
       gridItems.forEach(item => {
-          item.style.display = 'none'; 
+          item.style.display = 'none'; // Oculta todos os itens
       });
 
-      let found = false; 
+      let found = false; // Para rastrear se encontramos um item que deve ser exibido
 
+      // Verificar cada item e decidir se deve ser exibido
       for (let i = 0; i < gridItems.length; i += 4) {
           const registro = gridItems[i];
           const username = gridItems[i + 1];
@@ -88,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
           let shouldDisplay = false;
 
+          // Verificar o campo selecionado
           if (selectedField === 'Todos') {
               shouldDisplay = true; // Exibe todos os itens
           } else if (selectedField === 'Registro-filtro') {
@@ -96,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
               shouldDisplay = username.textContent.toLowerCase().includes(searchTerm);
           }
 
+          // Exibir o item se corresponder
           if (shouldDisplay) {
               registro.style.display = 'flex'; // Exibe registro
               username.style.display = 'flex'; // Exibe username
@@ -105,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
           }
       }
 
+      // Se não encontrado, opcionalmente, mostrar uma mensagem
       if (!found) {
           alert('Nenhum item encontrado.');
       }
