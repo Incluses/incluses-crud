@@ -8,25 +8,27 @@
 </head>
 <body>
 
-    <aside class="sidebar">
-        <div class="titulo">
-            <h1><span class="inclus">Inclus</span><span class="es">es</span></h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#"><img src="casa.png">Home</a></li>
-                <li><a href="#">Adm</a></li>
-                <li><a href="#">Permissão Vaga</a></li>
-                <li><a href="#">Permissão Curso</a></li>
-                <li><a href="#">Setores</a></li>
-                <li class="selecionado"><a href="#">Tipo de arquivo</a></li>
-                <li><a href="#">Tipo de vaga</a></li>
-                <li><a href="#">Situação trabalhista</a></li>
-                <li><a href="#">Status curso</a></li>
-            </ul>
-        </nav>
-        <button class="logout">Sair</button>
-    </aside>
+
+  <aside class="sidebar">
+    <div class="titulo">
+        <h1><span class="inclus">Inclus</span><span class="es">es</span></h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#"><img src="casa.png">Home</a></li>
+            <li class="selecionado"><a href="../CrudAdm/adm.html">Adm</a></li>
+            <li><a href="../PermissaoVaga/permisaaoVaga.html">Permissão Vaga</a></li>
+            <li><a href="../PermissaoCurso/permisaaoCurso.html">Permissão Curso</a></li>
+            <li><a href="../CrudSetor/Setor.html">Setores</a></li>
+            <li class="selecionado"><a href="../TipoArquivo/tipoArquivo.html">Tipo de arquivo</a></li>
+            <li><a href="../TipoVaga/tipoVaga.html">Tipo de vaga</a></li>
+            <li><a href="../SituaçãoTrabalhistas/situaçãoTrabalhista.html">Situação trabalhista</a></li>
+            <li><a href="../StatusCurso/statusCurso.html">Status curso</a></li>
+        </ul>
+    </nav>
+    <button class="logout">Sair</button>
+</aside>
+
 
     <div class="container">
         <main class="main-content">
@@ -41,8 +43,8 @@
                 <form action="#">
                     <select name="filter-field">
                         <option value="">Escolher campo</option>
-                        <option value="Todos">Todos</option>
-                        <option value="Registro-filtro">UUID</option>
+                        <option value="todos">Todos</option>
+                        <option value="registro-filtro">UUID</option>
                         <option value="username-filtro">NOME</option>
                     </select>
 

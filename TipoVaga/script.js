@@ -74,9 +74,9 @@ document.addEventListener("DOMContentLoaded", function() {
             const acoes = gridItems[i + 3];
 
             let shouldDisplay = false;
-            if (selectedField === 'Todos') {
+            if (selectedField === 'todos') {
                 shouldDisplay = true;
-            } else if (selectedField === 'Registro-filtro') {
+            } else if (selectedField === 'registro-filtro') {
                 shouldDisplay = registro.textContent.toLowerCase().includes(searchTerm);
             } else if (selectedField === 'username-filtro') {
                 shouldDisplay = username.textContent.toLowerCase().includes(searchTerm);
