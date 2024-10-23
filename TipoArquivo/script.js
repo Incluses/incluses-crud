@@ -80,6 +80,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 shouldDisplay = registro.textContent.toLowerCase().includes(searchTerm);
             } else if (selectedField === 'username-filtro') {
                 shouldDisplay = username.textContent.toLowerCase().includes(searchTerm);
+            } else if (selectedField === 'senha-filtro') {
+                shouldDisplay = senha.textContent.toLowerCase().includes(searchTerm);
             }
 
             if (shouldDisplay) {

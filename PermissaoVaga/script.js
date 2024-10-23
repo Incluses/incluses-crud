@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     shouldDisplay = registro.textContent.toLowerCase().includes(searchTerm);
                 } else if (selectedField === 'id_conta-filtro') {
                     shouldDisplay = idConta.textContent.toLowerCase().includes(searchTerm);
-                } else if (selectedField === 'id_curso-filtro') {
+                } else if (selectedField === 'id_vaga-filtro') {
                     shouldDisplay = idCurso.textContent.toLowerCase().includes(searchTerm);
                 }
 

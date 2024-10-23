@@ -69,8 +69,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         for (let i = 0; i < gridItems.length; i += 4) {
             const registro = gridItems[i];
-            const username = gridItems[i + 1];
-            const senha = gridItems[i + 2];
+            const UUID = gridItems[i + 1];
+            const nome = gridItems[i + 2];
             const acoes = gridItems[i + 3];
 
             let shouldDisplay = false;
@@ -78,8 +78,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 shouldDisplay = true;
             } else if (selectedField === 'registro-filtro') {
                 shouldDisplay = registro.textContent.toLowerCase().includes(searchTerm);
-            } else if (selectedField === 'username-filtro') {
-                shouldDisplay = username.textContent.toLowerCase().includes(searchTerm);
+            } else if (selectedField === 'UUID-filtro') {
+                shouldDisplay = UUID.textContent.toLowerCase().includes(searchTerm);
+            } else if (selectedField === 'nome-filtro') {
+                shouldDisplay = nome.textContent.toLowerCase().includes(searchTerm);
             }
 
             if (shouldDisplay) {
