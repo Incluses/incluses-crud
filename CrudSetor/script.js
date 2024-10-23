@@ -86,8 +86,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (shouldDisplay) {
                 registro.style.display = 'flex';
-                username.style.display = 'flex';
-                senha.style.display = 'flex';
+                UUID.style.display = 'flex';
+                nome.style.display = 'flex';
                 acoes.style.display = 'flex';
                 found = true;
             }

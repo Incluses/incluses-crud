@@ -25,14 +25,14 @@
             <li class="selecionado"><a href="../StatusCurso/statusCurso.html">Status curso</a></li>
         </ul>
     </nav>
-    <button class="logout">Sair</button>
-</aside>
+    <button class="logout" onclick="window.location.href='../Portal Administrador/portalAdm.html'">Sair</button>
+  </aside>
 
 
     <div class="container">
         <main class="main-content">
             <div class="titulo">
-                <h1>Crud Status curso</h1>
+                <h1>Status curso</h1>
                 <button class="filtrar">Filtrar <span class="pesquisa"> > </span></button>
                 <button class="inserir-adm">Inserir Status </button>
             </div>
@@ -44,8 +44,8 @@
                         <option value="">Escolher campo</option>
                         <option value="todos">Todos</option>
                         <option value="registro-filtro">Registro</option>
-                        <option value="username-filtro">UUID</option>
-                        <option value="senha-filtro">Status</option>
+                        <option value="uuid-filtro">UUID</option>
+                        <option value="status-filtro">Status</option>
                     </select>
 
                     <input type="text" name="search" placeholder="Pesquisar...">
@@ -57,7 +57,7 @@
             <div class="grid-container">
                 <div class="grid-header registro">Registro</div>
                 <div class="grid-header username">UUID</div>
-                <div class="grid-header Nome">Nome</div>
+                <div class="grid-header Nome">Status</div>
                 <div class="grid-header ações">Ações</div>
 
 
