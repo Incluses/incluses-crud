@@ -52,7 +52,6 @@ input {
   /* Estiliza o texto do placeholder */
   input::placeholder {
     color: #ccc; /* Cor clara para o placeholder */
-    font-style: italic; /* Faz o texto parecer mais informal */
     font-size: 15px; /* Tamanho do texto do placeholder */
 }
 
@@ -60,10 +59,10 @@ input {
     text-align: center; /* Centraliza o texto */
 }
 
-.inclus{
+#inclus{
     color: mediumblue; /* Cor do texto */
 }
-.es{
+#es{
     color:blueviolet /* Cor do texto */
 }
 
@@ -107,13 +106,11 @@ input {
     margin-top: 24px; /* Margem para cima */
 }
 
-
 .container button:hover {
     background-color: #ccc; /* Altera a cor de fundo */
     color: rgb(255, 255, 255); /* Cor do texto */
-    border: 1px solid #2C46D1; /* Adiciona uma borda */
-    transition: 0.5s ease-in; /* Altera o tempo de transição */
-    background-color: #8a0fc8; /* Altera a cor de fundo */
+    transition: 0.2s ease-in-out; /* Altera o tempo de transição */
+    background-color: #2f94ff; /* Altera a cor de fundo */
     font-weight: bold; /* Altera a fonte */
     font-size: 15px; /* Tamanho da fonte */
 }
