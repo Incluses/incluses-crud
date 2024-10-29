@@ -108,6 +108,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-weight: 100px;
 }
 h1 {
     color: #2C46D1;
@@ -216,9 +217,9 @@ h1 {
     font-weight: bold;
     border: 0;
     background-color: white;
-    border: gray 1px solid;
+    border: rgb(177, 177, 177) 1px solid;
     position: absolute;
-    margin-left: 25%;
+    margin-left: 10%;
 }
 
 #filtrar-bar {

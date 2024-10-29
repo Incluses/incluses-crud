@@ -228,9 +228,9 @@ h1 {
     font-weight: bold;
     border: 0;
     background-color: white;
-    border: gray 1px solid;
+    border: rgb(177, 177, 177) 1px solid;
     position: absolute;
-    margin-left: 30%;
+    margin-left: 17%;
 }
 
 #filtrar-bar {
