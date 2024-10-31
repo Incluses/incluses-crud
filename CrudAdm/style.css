@@ -376,7 +376,8 @@ font-size: 16px;
     border-radius: 75px;
     transform: rotate(90deg);
     position: relative;
-    top: 40%;
+    top: 14px;
+    right: 5px;
 }
 
 @media (max-width: 904px) {
