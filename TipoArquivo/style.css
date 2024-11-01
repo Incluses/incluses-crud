@@ -197,7 +197,7 @@ h1 {
     align-items: center;
 }
 
-.inserir-adm {
+.inserir-arquivo {
     padding: 18px 30px;
     background-color: #2C46D1;
     color: white;
@@ -207,15 +207,17 @@ h1 {
     font-size: 14px;
     margin-right: 40PX;
 }
-.inserir-adm {
-    padding: 15px 20px;
-    background-color: #2C46D1;
-    color: white;
+
+.elemento{
+    background-color: #0866FF;
+    height: 9px;
+    width: 23px;
     border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: bold;
+    border-radius: 75px;
+    transform: rotate(90deg);
+    position: relative;
+    top: 13px;
+    right: 5px;
 }
 
 .filtrar {

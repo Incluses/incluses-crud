@@ -1,11 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crud Permissao vaga</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Permissao vaga</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -17,6 +16,7 @@
             <ul>
                 <li><a href="#"><img src="casa.png">Home</a></li>
                 <li><a href="../CrudAdm/adm.html">Adm</a></li>
+                <div class="elemento"></div>
                 <li class="selecionado"><a href="../PermissaoVaga/permissaoVaga.html">Permissão Vaga</a></li>
                 <li><a href="../PermissaoCurso/permissaoCurso.html">Permissão Curso</a></li>
                 <li><a href="../CrudSetor/Setor.html">Setores</a></li>
@@ -42,8 +42,9 @@
                 <form action="#" method="GET">
                     <select name="filter-field">
                         <option value="">Escolher campo</option>
-                        <option value="Todos">Todos</option>
-                        <option value="Registro-filtro">Registro</option>
+                        <option value="todos">Todos</option>
+                        <option v
+                        alue="registro-filtro">Registro</option>
                         <option value="id_conta-filtro">id_conta</option>
                         <option value="id_vaga-filtro">id_vaga</option>
                     </select>
@@ -61,6 +62,12 @@
                 <div class="grid-header acoes">Permissão</div>
 
                 <div class="grid-item item-registro">1</div>
+                <div class="grid-item item-id_conta">24</div>
+                <div class="grid-item item-id_vaga">31</div>
+                <div class="grid-item">
+                    <button class="action view"><img src="olho.png" alt=""></button>
+                </div>
+                                <div class="grid-item item-registro">1</div>
                 <div class="grid-item item-id_conta">24</div>
                 <div class="grid-item item-id_vaga">31</div>
                 <div class="grid-item">

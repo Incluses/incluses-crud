@@ -229,6 +229,18 @@ h1 {
     padding-top: 4px;
 }
 
+.elemento{
+    background-color: #0866FF;
+    height: 9px;
+    width: 23px;
+    border: none;
+    border-radius: 75px;
+    transform: rotate(90deg);
+    position: relative;
+    top: 13px;
+    right: 5px;
+}
+
 .permitido {
     background-color: #6eff76;
 }
@@ -438,7 +450,7 @@ textarea.input {
         font-size: 20px;
     }
 
-    .filtrar, .inserir-adm {
+    .filtrar {
         font-size: 10px; 
         padding: 10px; 
     }
