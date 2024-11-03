@@ -218,7 +218,8 @@ h1 {
     cursor: pointer;
     border-radius: 10px;
     font-size: 14px;
-    margin-right: 40PX;
+    margin-right: 40px;
+    font-weight: bold;
 }
 
 .filtrar {
