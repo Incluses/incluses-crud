@@ -16,8 +16,7 @@ Para armazenar os dados nós usamos o PostgreSQL.
 No projeto utilizamos REACT no JAVASCRIPT e o SCRUM na parte de metodologia ágil, facilitando a construção do projeto.
 
 ## Como executar a instalação no notebook: 
-O nosso CRUD está disponível para download no nosso repositorio do GitHub.
-
+O app está disponivel apenas para os membros do grupo.
 
 
 ### Direitos autorais (c) 2024 Diversis
